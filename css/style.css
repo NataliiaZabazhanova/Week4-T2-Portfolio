@@ -3,29 +3,29 @@
     padding: 0;
     margin: 0;
     border: 0;
-  }
-  *,
-  *:before,
-  *:after {
+}
+*,
+*:before,
+*:after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  :focus,
-  :active {
+}
+:focus,
+:active {
     outline: none;
-  }
-  a:focus,
-  a:active {
+}
+a:focus,
+a:active {
     outline: none;
-  }
-  nav,
-  footer,
-  header,
-  aside {
+}
+nav,
+footer,
+header,
+aside {
     display: block;
-  }
-  html,
-  body {
+}
+html,
+body {
     height: 100%;
     width: 100%;
     font-size: 100%;
@@ -34,30 +34,67 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-  }
-  input,
-  button,
-  textarea {
+}
+input,
+button,
+textarea {
     font-family: inherit;
-  }
-  input::-ms-clear {display: none;}
-  button {cursor: pointer;}
-  button::-moz-focus-inner {
+}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {
     padding: 0;
     border: 0;
-  }
-  a,
-  a:visited {text-decoration: none;}
-  a:hover {text-decoration: none;}
-  ul li {list-style: none;}
-  img {vertical-align: top;}
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+}
+a,
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: inherit;
     font-weight: 400;
-  }
+}
   /*******************************************************************/
+  /*Wrapper*/
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+  /*Main grid*/
+body {
+    font-family: Poppins;
+}
+.container {
+    max-width: 1230px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    background-color: #F5F5F5;
+}
+/*nav-menu*/
+.menu__title {
+    font-size: 19px;
+    color: #393E46;
+}
+.menu__list {
+    font-size: 20px;
+    margin: 0px 0px 0px 200px;
+}
+.menu__list_item {
+    font-size: 20px;
+    color: #FF9F29;
+}
+.menu__location {
+    font-size: 19px;
+    color: #393E46;
+    text-align: center;
+}
+.menu__logo {
+    max-width: 20px;
+}
+ 
