@@ -60,41 +60,107 @@ h6 {
     font-size: inherit;
     font-weight: 400;
 }
-  /*******************************************************************/
-  /*Wrapper*/
+/*******************************************************************/
+/*Wrapper*/
 .wrapper {
     min-height: 100%;
     overflow: hidden;
 }
-  /*Main grid*/
+/*Main grid*/
 body {
     font-family: Poppins;
+    background-color: #F5F5F5;
 }
 .container {
     max-width: 1230px;
     padding: 0px 15px;
     margin: 0px auto;
-    background-color: #F5F5F5;
 }
+/***********************************************************************/
 /*nav-menu*/
+.header {
+    margin: 50px 0px 0px 0px;
+}
 .menu__title {
-    font-size: 19px;
+    font-size: 20px;
+    font-weight: 400;
     color: #393E46;
+    line-height: 40px;
 }
 .menu__list {
-    font-size: 20px;
     margin: 0px 0px 0px 200px;
 }
 .menu__list_item {
     font-size: 20px;
     color: #FF9F29;
+    font-weight: 400;
+    line-height: 40px;
 }
 .menu__location {
+    display: flex;
+    align-items: center;
     font-size: 19px;
+    font-weight: 400;
+    line-height: 40px;
     color: #393E46;
+}
+/*section greeting*/
+.greeting {
+    margin: 100px 0px 0px 0px;
+}
+.greeting__row {
+    display: flex;
+    align-items:flex-start
+}
+.greeting__column {
+    order: 0
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.column__text {
+    font-size: 30px;
+    color: #393E46;
+    line-height: 50px;
+    font-weight: 500;
+
+}
+.column__title {
+    font-size: 45px;
+    color: #393E46;
+    line-height: 68px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 50px 0px;
+}
+.column__btn {
+    max-width: 200px;
+    font-size: 20px;
+    color: #393E46;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
+    padding: 10px;
+    border: 1px solid #FF9F29;
+    background: #FF9F29;
+    border-radius: 3px;
+    margin: 70px 0px 0px 0px;
 }
-.menu__logo {
-    max-width: 20px;
+.greeting__text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #393E46;
+    line-height: 40px;
+    margin: 0px 30px;
+    order: 0
 }
- 
+.paragraf {
+}
+.greeting__img {
+    margin-bottom: 0px;
+    order: 1; /* Order the last element to be displayed after the first two */
+    margin-top: auto;
+}
