@@ -136,31 +136,137 @@ body {
     margin: 50px 0px;
 }
 .column__btn {
-    max-width: 200px;
-    font-size: 20px;
-    color: #393E46;
-    line-height: 30px;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #FF9F29;
-    background: #FF9F29;
-    border-radius: 3px;
+    max-width: 200px;  
+    /*border: 1px solid #FF9F29;*/
     margin: 70px 0px 0px 0px;
+    /*Customize the btn*/
+    position: relative;
 }
+/**************************************************************/
+/*Create motion elements*/
+.column__btn::before,
+.column__btn::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #393E46;
+  top: -10px;
+  left: 50%;
+  /*из-за того, что фон кнопки сделан через псевдоэлемент с z-index выше, чем у рамки*/
+  /*половина кнопки скрывается за фоном*/
+  z-index: 1;
+  margin-left: -40px;
+  /***********************************************************/
+  /*add an animation for hover*/
+  transition: all 0.8s ease 0s;
+}
+/*Settings motion frames using keyframes*/
+.column__btn::before {
+    animation: rotate 20s infinite linear;
+}
+.column__btn::after {
+  animation: rotate 25s infinite linear;
+}
+/*Customize the btn*/
+.column__btn_text {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   border-radius: 10px;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: #393E46;
+   line-height: 30px;
+   font-weight: 500;
+   letter-spacing: 3px;
+   transition: all 1s ease 0s;
+   top: 0;
+   overflow: hidden;
+}
+/*Create a background*/
+.column__btn_text::before,
+.column__btn_text::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #FF9F29;
+    transition: all 0.8s ease 0s;
+}
+.column__btn_text::before {
+    left: 0;
+    /*z-index to hidden part of motion frames*/
+    z-index: 2;
+}
+.column__btn_text::after {
+    right: 0;
+}
+.column__btn_text span {
+    /*z-index for showing text*/
+    position: relative;
+    z-index: 2;
+}
+/*----------------------------------------------------------*/
+/*Add an event when it is hovered*/
+.column__btn:hover::before,
+.column__btn:hover::after {
+    left: 100%;
+    opacity: 0;
+}
+.column__btn:hover .column__btn_text {
+    top: -8px;
+    color: #fff;
+    transition: all 0.5s ease 0.2s;
+    box-shadow: 0 5px 0px 0 #393E46;
+}
+.column__btn:hover .column__btn_text::before,
+.column__btn:hover .column__btn_text::after {
+    background-color:/* #FF616D*/#D83A56;
+}
+.column__btn:hover .column__btn_text::before {
+    width: 100%;
+}
+/*----------------------------------------------------*/
+/*Reaction to click*/
+.column__btn:active .column__btn_text {
+  top: -4px;
+  color: #fff;
+  transition: all 0.1s ease 0s;
+  box-shadow: 0 2px 0px 0 #393E46;
+}
+/*-----------------------------------------------*/
+/*Create keyframes for motions frames*/
+/********************************************/
+/*анимация вращения рамок*/
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+/***************************************************/
+
+
+
+
 .greeting__text {
-    font-size: 20px;
-    font-weight: 400;
-    color: #393E46;
-    line-height: 40px;
     margin: 0px 30px;
     order: 0
 }
 .paragraf {
+    font-size: 20px;
+    font-weight: 400;
+    color: #393E46;
+    line-height: 40px;
 }
 .greeting__img {
     margin-bottom: 0px;
     order: 1; /* Order the last element to be displayed after the first two */
     margin-top: auto;
+    border-radius: 10px;
 }
