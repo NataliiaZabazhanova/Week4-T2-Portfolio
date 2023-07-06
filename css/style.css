@@ -337,7 +337,7 @@ body {
 }
 @media (max-width: 460px) {
     .greeting__text  {
-        margin: 50px 0px 0px 0px;
+        margin: 70px 0px 0px 0px;
     }  
 }
 .greeting__img {
