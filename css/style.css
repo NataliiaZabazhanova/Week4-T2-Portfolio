@@ -532,7 +532,7 @@ body {
     .projects_rew .projects__column_b {
         order: 1;
     }
-    .projects_rew.projects__column {
+    .projects_rew .projects__column {
         order: 2;
     }
 }
