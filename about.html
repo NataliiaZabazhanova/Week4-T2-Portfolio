@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-=<div class="wrapper">
+<div class="wrapper">
     <div class="page">
-      <div class="container">
-            <header class="header">
+    <div class="container">
+        <!--Nav menu-->
+        <header class="header">
               <!--Using Bootstrap-->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
@@ -49,28 +50,63 @@
                         </span>
                     </div>
                   </nav>
-            </header>
-            <section class="greeting">
-              
-                <div class="greeting__row">
-          
-                    <div class="greeting__column column">
-                        <h2 class="column__text">Hi I’am</h2>
-                        <h1 class="column__title">Nataliia Zabazhanova</h1>
-                        <h2 class="column__text">Front-End Developer</h2>
-                        <a href="#" class="column__btn"> <span class="column__btn_text"> <span>Contact me</span></span></a>
-                    </div>
-                    <div class="greeting__text paragraf">I am a beginner front-end developer with experience in HTML, CSS, and JavaScript. I strive to create beautiful and intuitive user interfaces.</div>
-                  
-                    <img src="img/1.png" alt="" class="greeting__img">
+        </header>
+        <!----------------------------------------------------->
+        <section class="greeting">
+            <div class="greeting__row">
+                <div class="greeting__column column">
+                    <h1 class="column__title">About Me</h1> 
                 </div>
-              
-            </section>
+                <div class="greeting__text paragraf">Hello, and welcome to my portfolio! My name is Nataliia, and I am a beginner front-end developer originally from Ukraine, currently based in the UK. I am excited to share my journey and showcase my passion for front-end development through this portfolio project.</div>
+                <img src="img/me.jpg" alt="" class="greeting__img" width="300px">
+            </div>
+        </section>
+        <!--Education-->
+        <section class="education projects">
+            <h2 class="projects__title">Experience and Education</h2>
+            <div class="projects__row">
+                <div class="projects__column">
+                    <div class="projects__content block">
+                      <div class="block__icon"><img src="img/Logo/book3.png" alt=""></div>
+                      <div class="block__text">I have recently embarked on my journey as a front-end developer and have been honing my skills in HTML, CSS, and JavaScript. Although this portfolio project is my first, I have already completed several projects that you can explore on my website. I am constantly expanding my knowledge and staying up to date with the latest industry trends and technologies.</div>
+                    </div>
+                  </div>
+
+
+
+
+        <div class="slider">
+              <div class="projects__column slider__item">
+                <div class="projects__item item">
+                  <span class="item_image ibg"><img src="img/sertificate/sertificate1.jpg" alt=""></span>
+                </div>
+              </div>
+              <div class="projects__column slider__item">
+                <div class="projects__item item">
+                  <span class="item_image ibg"><img src="img/sertificate/sertificate2.jpg" alt=""></span>
+                </div>
+              </div>
         </div>
+
+
+
+            </div>
+        </section>
+
+
+
+    </div>
     </div>
     <footer class="footer">
     </footer>
 </div>
+<!--Include jQwery-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!--Include slider slick-->
+<script src="js/slick.min.js"></script>
+<!--Include slider.js-->
+<script src="js/slider.js"></script>
+<!--Include main JS file-->
 <script src="js/script.js"></script>
 </body>
 </html>
