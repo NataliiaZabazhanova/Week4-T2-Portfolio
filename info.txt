@@ -1,0 +1,4 @@
+weather: https://phenomenal-rolypoly-c7012c
+knitting: https://meek-lokum-3bd3d7.netlify.app/
+dictionary: https://cheery-baklava-bda389.netlify.app/
+knit: https://www.shecodes.io/workshops/shecodes-basics-7a10a400-2ff5-4948-90c8-664c5c6a1cc3/projects/1583010

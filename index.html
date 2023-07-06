@@ -12,13 +12,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!--Include Bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--Include jQwery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--Include style.css-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
+        
             <header class="header">
+              <div class="container">
                 <!--Using Bootstrap-->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
@@ -46,8 +49,10 @@
                         </span>
                     </div>
                   </nav>
+                </div>
             </header>
             <section class="greeting">
+              <div class="container">
                 <div class="greeting__row">
                     <div class="greeting__column column">
                         <h2 class="column__text">Hi I’am</h2>
@@ -58,9 +63,71 @@
                     <div class="greeting__text paragraf">I am a beginner front-end developer with experience in HTML, CSS, and JavaScript. I strive to create beautiful and intuitive user interfaces.</div>
                     <img src="img/1.png" alt="" class="greeting__img">
                 </div>
+              </div>
             </section>
+
+            <!--My projects-->
+            <!--First project-->
+            <section class="projects">
+              <h2 class="projects__title container">My projects</h2>
+              <div class="projects__row">
+                <div class="projects__column projects__column_b">
+                  <a href="https://cheery-baklava-bda389.netlify.app/" target="_blank" class="projects__item item">
+                    <span class="item__logo"><img src="img/Logo/book3.png" alt=""></span>
+                    <span class="item_image ibg"><img src="img/Progect_HomePage/3.png" alt=""></span>
+                  </a>
+                </div>
+                <div class="projects__column">
+                  <div class="projects__content block">
+                    <div class="block__icon"><img src="img/Logo/book3.png" alt=""></div>
+                    <h2 class="block__title">Interactive Dictionary Project</h2>
+                    <div class="block__text">Welcome to the Interactive Dictionary Project! This web application provides users with a quick and convenient way to find synonyms for words they enter into the search area. With the power of HTML, CSS, and a reliable dictionary API, this project offers an invaluable resource for expanding your vocabulary and enhancing your writing.</div>
+                  </div>
+                  <a href="#" class="projects__btn">Read more</a>
+                </div>
+              </div>
+            </section>
+            <!--Second project-->
+            <section class="projects projects_rew">
+              <div class="projects__row">
+                <div class="projects__column projects__column_b">
+                  <a href="https://phenomenal-rolypoly-c7012c" target="_blank" class="projects__item item">
+                    <span class="item__logo"><img src="img/Logo/cloud2.png" alt=""></span>
+                    <span class="item_image ibg"><img src="img/Progect_HomePage/1.png" alt=""></span>
+                  </a>
+                </div>
+                <div class="projects__column">
+                  <div class="projects__content block">
+                    <div class="block__icon"><img src="img/Logo/cloud2.png" alt=""></div>
+                    <h2 class="block__title">Real-Time Weather Forecast</h2>
+                    <div class="block__text">It is a web application that allows users to check the weather conditions for any city, their current location, or search for a specific city. With this project, users can stay informed about the current weather and get a 5-day forecast.</div>
+                  </div>
+                  <a href="#" class="projects__btn">Read more</a>
+                </div>
+              </div>
+            </section>
+             <!--Third project-->
+             <section class="projects">
+              <div class="projects__row">
+                <div class="projects__column projects__column_b">
+                  <a href="https://www.shecodes.io/workshops/shecodes-basics-7a10a400-2ff5-4948-90c8-664c5c6a1cc3/projects/1583010" target="_blank" class="projects__item item">
+                    <span class="item__logo"><img src="img/Logo/knitting1.png" alt=""></span>
+                    <span class="item_image ibg"><img src="img/Progect_HomePage/4.png" alt=""></span>
+                  </a>
+                </div>
+                <div class="projects__column">
+                  <div class="projects__content block">
+                    <div class="block__icon"><img src="img/Logo/knitting1.png" alt=""></div>
+                    <h2 class="block__title">KnitCraft</h2>
+                    <div class="block__text">Welcome to KnitCraft, my first front-end development project!</div>
+                  </div>
+                  <a href="#" class="projects__btn">Read more</a>
+                </div>
+              </div>
+            </section>
+
         </div>
     </div>
-
+<script src="js/script.js"></script>
 </body>
 </html>
