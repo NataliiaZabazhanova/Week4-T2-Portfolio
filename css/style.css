@@ -186,6 +186,11 @@ body {
         line-height: 50px;
     }  
 }
+@media (max-width: 460px) {
+    .column__title {
+        margin: 15px 0px;
+    }  
+}
 .column__btn {
     max-width: 200px;  
     /*border: 1px solid #FF9F29;*/
@@ -323,12 +328,16 @@ body {
         font-size: 18px;
         line-height: 37px;
         margin: 0px 10px;
-
     }  
 }
 @media (max-width: 490px) {
     .greeting__text {
         flex-basis: 100%;
+    }  
+}
+@media (max-width: 460px) {
+    .greeting__text  {
+        margin: 50px 0px 0px 0px;
     }  
 }
 .greeting__img {
