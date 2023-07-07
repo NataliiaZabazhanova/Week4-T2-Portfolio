@@ -547,6 +547,9 @@ body {
 /**********************************************/
 /*PAGE ABOUT*/
 /*Education*/
+.education__title {
+    margin: 70px 0px 35px 0px;
+}
 .projects__column_row {
     display: flex;
     flex-direction: column;
@@ -554,5 +557,16 @@ body {
 .item_image {
     border-radius: 10px;
 }
+/*******************************************/
+/*Portfolio*/
+.portfolio__title {
+    margin: 70x 0px 35px 0px;
+}
 /******************************************/
-/*footer*/
+/*Contact*/
+.contact{
+margin: 50px auto;
+}
+.contact__mail {
+color: #393E46;
+}
