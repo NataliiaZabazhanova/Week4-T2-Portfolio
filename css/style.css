@@ -366,7 +366,6 @@ body {
         max-width: 100%;
         max-height: 40%;
         flex-basis: 100%;
-        border-radius: 0px;
     }  
 }
 /****************************************************************/
@@ -400,11 +399,9 @@ body {
 }
 .projects__row {
     display: flex;
-    min-width: 0;
 }
 .projects__column {
     flex: 0 1 66.6667%;
-    min-width: 0;
 }
 .projects__column_b {
     flex: 0 1 33.3333%;
@@ -448,6 +445,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
+    border-radius: 10px;
 }
 .projects__content {
     padding: 70px 65px 55px 65px;
@@ -545,12 +543,16 @@ body {
         order: 2;
     }
 }
-/******************************************/
-/*footer*/
 
 /**********************************************/
 /*PAGE ABOUT*/
-/**Slider settings*/
-.slick-track {
+/*Education*/
+.projects__column_row {
     display: flex;
+    flex-direction: column;
 }
+.item_image {
+    border-radius: 10px;
+}
+/******************************************/
+/*footer*/
