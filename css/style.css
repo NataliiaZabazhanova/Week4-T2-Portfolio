@@ -550,13 +550,40 @@ body {
 .education__title {
     margin: 70px 0px 35px 0px;
 }
-.projects__column_row {
+.education {
+}
+.education__title {
+}
+.projects__title {
+}
+.education__row {
+    /*for slider good work with flex*/
+    min-width: 0;
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
-.item_image {
-    border-radius: 10px;
+.education__column {
+    /*for slider good work with flex*/
+    min-width: 0;
+    flex: 0 1 50%;
 }
+.education__content {
+}
+.slider {
+   
+}
+.slick-track {
+    display: flex;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slider__item {
+    
+}
+.education__img {
+}
+
 /*******************************************/
 /*Portfolio*/
 .portfolio__title {
@@ -570,3 +597,8 @@ margin: 50px auto;
 .contact__mail {
 color: #393E46;
 }
+
+
+
+
+/*TEST*/
