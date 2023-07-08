@@ -6,6 +6,14 @@ $(document).ready(function() {
     adaptiveHeight: false,
     speed: 400,
     easing: 'ease',
-    
+    responsive: [
+      {
+        breakpoint: 1101,
+        settings: {
+          arrows: true,
+          dots: false,
+        }
+      }
+    ]
   });
 })
