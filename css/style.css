@@ -559,10 +559,16 @@ body {
 .education__row {
     /*for slider good work with flex*/
     min-width: 0;
+    /*------------------------------*/
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    /*align-items: center;*/
 }
+@media (max-width: 1100px ) {
+    .education__row {
+        flex-direction: column;
+    }
+}
+
 .education__column {
     /*for slider good work with flex*/
     min-width: 0;
@@ -631,8 +637,21 @@ body {
     overflow: hidden;
 }
 /***********************************************/
+@media (max-width: 1100px) {
+    .slider {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .slider__item {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
 .education__img {
 }
+/*Adaptive for section education*/
 
 /*******************************************/
 /*Portfolio*/
