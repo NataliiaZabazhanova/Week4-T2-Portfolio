@@ -6,7 +6,7 @@ $(document).ready(function() {
     adaptiveHeight: false,
     speed: 400,
     easing: 'ease',
-    responsive: [
+   /* responsive: [
       {
         breakpoint: 1101,
         settings: {
@@ -14,6 +14,6 @@ $(document).ready(function() {
           dots: false,
         }
       }
-    ]
+    ]*/
   });
 })
