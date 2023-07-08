@@ -553,8 +553,7 @@ body {
 .education {
 }
 .education__title {
-}
-.projects__title {
+    padding: 70px 65px 70px 65px;
 }
 .education__row {
     /*for slider good work with flex*/
@@ -574,6 +573,7 @@ body {
     flex: 0 1 50%;
 }
 .education__content {
+    padding: 0px 65px 55px 65px;
 }
 /*slider settings*/
 .slider {
