@@ -381,7 +381,7 @@ body {
 }
 /***********************************************************/
 .projects {
-    margin: 10px 0px;
+    margin: 10px 0px 70px 0px;
 }
 .projects__title {
     color: #393E46;
@@ -390,7 +390,7 @@ body {
     font-weight: 500;
     line-height: 50px;
     letter-spacing: 3px;
-    margin: 150px 0px 70px 0px;
+    margin: 70px 0px 70px 0px;
 }
 @media (max-width: 1100px) {
     .projects__title {
@@ -548,12 +548,11 @@ body {
 /*PAGE ABOUT*/
 /*Education*/
 .education__title {
-    margin: 70px 0px 35px 0px;
+    
 }
 .education {
 }
 .education__title {
-    padding: 70px 0px 70px 0px;
 }
 .education__row {
     /*for slider good work with flex*/
