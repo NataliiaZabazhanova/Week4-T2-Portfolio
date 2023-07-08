@@ -561,6 +561,7 @@ body {
     min-width: 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .education__column {
     /*for slider good work with flex*/
@@ -569,18 +570,67 @@ body {
 }
 .education__content {
 }
+/*slider settings*/
 .slider {
-   
-}
-.slick-track {
-    display: flex;
-}
-.slick-list {
-    overflow: hidden;
+   position: relative;
 }
 .slider__item {
     
 }
+/*customize arrows*/
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -10px 0px 0px 0px;
+    z-index: 10;
+    /*Delete text from arrows*/
+    font-size: 0;
+    width: 30px;
+    height: 100px;
+    opacity: 0.6;
+}
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url("../img/arrows/back.png") 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url("../img/arrows/next.png") 0 0 / 100% no-repeat;
+}
+/*---------------------------------------------*/
+/*Customize dots*/
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .slick-dots li {
+    list-style: none;
+    margin: 0px 5px;
+}
+.slider .slick-dots button {
+    /*Delete text - 1, 2, 3...*/
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #393E46;
+    border-radius: 50%;
+
+}
+.slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid #393E46;
+  }
+  /*--------------------------------------------*/
+/*Automatic classes of slider*/
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+.slick-list {
+    overflow: hidden;
+}
+/***********************************************/
 .education__img {
 }
 
@@ -592,13 +642,9 @@ body {
 /******************************************/
 /*Contact*/
 .contact{
-margin: 50px auto;
+    margin: 50px auto;
 }
 .contact__mail {
-color: #393E46;
+    color: #393E46;
 }
 
-
-
-
-/*TEST*/
