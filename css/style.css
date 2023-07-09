@@ -125,6 +125,7 @@ body {
         margin: 35px 0px 35px 0px;
     }  
 }
+
 .greeting__row {
     display: flex;
     align-items:flex-start;
@@ -655,9 +656,7 @@ body {
 }
 /*******************************************/
 /*Portfolio*/
-.portfolio__title {
-    margin: 70x 0px 35px 0px;
-}
+
 /******************************************/
 /*Contact*/
 .contact{
