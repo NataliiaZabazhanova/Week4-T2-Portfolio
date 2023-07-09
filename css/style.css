@@ -83,7 +83,6 @@ h6 {
     font-size: 24px;
     display: none;
   }
-  
   .back-to-top:before {
     content: "";
     border-left: 30px solid transparent;
@@ -93,11 +92,10 @@ h6 {
     bottom: 20px;
     right: 10px;
   }
-  
   .back-to-top:hover.back-to-top:before {
     border-bottom: 30px solid #ed701e;
   }
-  
+  /***************************************/
 /*Main grid*/
 body {
     font-family: Poppins;
@@ -573,8 +571,8 @@ body {
         order: 2;
     }
 }
-
 /**********************************************/
+/***********************************************/
 /*PAGE ABOUT*/
 /*Education*/
 .education__title {
@@ -655,7 +653,7 @@ body {
     background-color: transparent;
     border: 1px solid #393E46;
   }
-  /*--------------------------------------------*/
+/*--------------------------------------------*/
 /*Automatic classes of slider*/
 .slick-track {
     display: flex;
@@ -686,12 +684,31 @@ body {
 /*******************************************/
 /*Portfolio*/
 
-/******************************************/
-/*Contact*/
-.contact{
-    margin: 50px auto;
+/**********************************************/
+/***********************************************/
+/*PAGE PROJECTS*/
+.projects {
+    margin: 70px 0px;
 }
-.contact__mail {
-    color: #393E46;
+.projects__tabs {
 }
-
+.tabs {
+}
+.tabs__items {
+    display: flex;
+}
+.tabs__item {
+    flex: 0 1 33.33333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabs__body {
+}
+.tabs__block {
+    padding: 20px;
+    display: none;
+}
+.tabs__block:target {
+    display: block;
+}

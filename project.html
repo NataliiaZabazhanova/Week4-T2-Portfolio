@@ -21,6 +21,7 @@
 <div class="wrapper">
   <div class="page">
       <div class="container">
+        <!--Nav menu-->
             <header class="header">
               
                 <!--Using Bootstrap-->
@@ -39,10 +40,10 @@
                             <a class="nav-link menu__list_item" href="about.html">About</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link menu__list_item active" href="project.html">Prolects</a>
+                            <a class="nav-link menu__list_item active" href="project.html">Projects</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link menu__list_item" href="about.html#contact">Contact</a>
+                            <a class="nav-link menu__list_item" href="contact.html">Contact</a>
                           </li>
                         </ul>
                         <span class="navbar-text menu__location">
@@ -52,14 +53,56 @@
                   </nav>
                 
             </header>
-            
+      <!----------------------------------------------------->
+      <section class="projects">
+        <div class="projects__tabs tabs">
+          <nav class="tabs__items">
+            <a href="#tab_01" class="tabs__item"><img src="img/Project/2.png" alt=""></a>
+            <a href="#tab_02" class="tabs__item"><img src="img/Project/1.png" alt=""></a>
+            <a href="#tab_03" class="tabs__item"><img src="img/Project/3.png" alt=""></a>
+          </nav>
+          <div class="tabs__body">
+            <div id="tab_01" class="tabs__block">
+              <div class="projects__content block">
+                <div class="block__icon"><img src="img/Logo/book3.png" alt=""></div>
+                <h2 class="block__title">Interactive Dictionary Project</h2>
+                <h2 class="block__title">Description</h2>
+                <div class="block__text">Welcome to the Interactive Dictionary Project! This web application provides users with a quick and convenient way to find synonyms for words they enter into the search area. With the power of HTML, CSS, and a reliable dictionary API, this project offers an invaluable resource for expanding your vocabulary and enhancing your writing.</div>
+                <h2 class="block__title">Key Features</h2>
+                <ul class="block__text">
+                  <li>User-friendly Interface: The project features a clean and intuitive user interface, making it easy for users to enter a word of their choice and retrieve relevant synonyms. The search area is prominently displayed, ensuring a seamless user experience.
+                  </li>
+                  <li>API Integration: The project leverages a dictionary API to fetch synonym data. The API integration allows for seamless retrieval of synonym information, keeping the application up-to-date and accurate.
+                  </li>
+                  <li>Responsive Design: The project is built with a responsive design, ensuring optimal viewing and functionality across different devices, including desktops, tablets, and mobile phones. Users can access the dictionary and find synonyms on the go, wherever they are.
+                  </li>        
+                </ul>
+              
+              </div>
+              
+              <a href="project.html" class="projects__btn">Open project</a>
+            </div>
+            <div id="tab_02" class="tabs__block">
+              Real-time weather forecast. Description:
+              The Real-Time Weather Forecast project is a web application that allows users to check the weather conditions for any city, their current location, or search for a specific city. With this project, users can stay informed about the current weather and get a 5-day forecast.
+            </div>
+            <div id="tab_03" class="tabs__block">
+              Knitkraft. Description:
+              Welcome to KnitCraft, my first front-end development project! 
+            </div>
+          </div>
+        </div>
+      </section>      
   </div>
 </div>
-  <footer class="footer">
-</footer>
+<!----------------------------------------------------->
+<!--FOOTER-->
+<footer class="footer"><div class="container"></div></footer>
 </div>
+<!----------------------------------------------------->
 <!--Button to returt-->
 <a href="#" class="back-to-top"></a>
+<!----------------------------------------------------->
 <!--Include backToTop-->
 <script src="js/backToTop.js"></script>
 <script src="js/script.js"></script>
