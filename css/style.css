@@ -691,6 +691,7 @@ body {
     margin: 70px 0px;
 }
 .projects__tabs {
+    
 }
 .tabs {
 }
@@ -702,8 +703,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 380px;
+    opacity: 0.5;
+}
+@media (max-width: 440px) {
+    .tabs__items {
+        flex-direction: column;
+    }
+}
+.tabs__item.active {
+    opacity: 1;
 }
 .tabs__body {
+    margin: 50px 0px;
 }
 .tabs__block {
     padding: 20px;
@@ -711,4 +723,20 @@ body {
 }
 .tabs__block:target {
     display: block;
+}
+.tabs__text {
+}
+.tabs__title {
+    margin: 30px 0px;
+}
+.tabs__list li {
+    list-style: circle;
+}
+.tabs__text span,
+.tabs__list li span {
+    font-weight: 500;
+}
+.tabs__btn {
+    margin: 50px 0px 0px 0px;
+    background-color: #FF9F29;
 }

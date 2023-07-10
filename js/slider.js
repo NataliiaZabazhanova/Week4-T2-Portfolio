@@ -17,3 +17,9 @@ $(document).ready(function() {
     ]*/
   });
 })
+
+//Add class active to tabs
+$(document).ready(function() {
+$('.tabs__item').click(function(event) {
+  $('.tabs__item').toggleClass('active');
+});
