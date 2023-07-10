@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    $('.tabs__item').click(function(event) {
+    $('.tabs__item, .tabs__block').click(function(event) {
       
       // Remove the active class from all tabs__item elements
-      $('.tabs__item').removeClass('active');
+      $('.tabs__item, .tabs__block').removeClass('active');
       
       // Add the active class to the clicked tabs__item element
       $(this).addClass('active');
@@ -13,6 +13,7 @@ $(document).ready(function() {
       
       allImages.css('opacity', '0.5'); // Set opacity for all images
       clickedImg.css('opacity', '1'); // Set opacity for the clicked image
+      
     });
   });
   

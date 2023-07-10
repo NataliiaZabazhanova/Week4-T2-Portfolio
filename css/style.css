@@ -717,6 +717,9 @@ body {
 .tabs__item.active {
     opacity: 1;
 }
+.tabs__block.active {
+    display: block;
+}
 .tabs__body {
     margin: 50px 0px;
 }
