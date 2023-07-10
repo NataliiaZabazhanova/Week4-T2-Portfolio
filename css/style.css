@@ -746,3 +746,36 @@ body {
     margin: 50px 0px 0px 0px;
     background-color: #FF9F29;
 }
+/**********************************************/
+/***********************************************/
+/*PAGE CONTACTS*/
+.greeting__contact {
+}
+.contact {
+}
+.contact__row {
+}
+.contact__column {
+}
+.contact__column a {
+    font-size: 18px;
+    color: #393E46;
+    display: block;
+    margin: 0px 0px 20px 0px;
+}
+.contact__title {
+    margin-bottom: 10px;
+}
+.block__title {
+}
+.icons {
+}
+.icons__row {
+    display: flex;
+}
+.icons__row img {
+    margin: 0px 20px;
+}
+.icons__row img:first-child {
+    margin-left: 0px;
+}
