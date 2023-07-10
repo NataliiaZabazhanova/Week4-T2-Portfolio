@@ -346,6 +346,9 @@ body {
     order: 0;
     flex: 0 1 33.3333%;
 }
+.greeting__text span {
+    font-weight: 500;
+}
 .paragraf {
     font-size: 20px;
     font-weight: 400;
