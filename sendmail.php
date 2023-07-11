@@ -1,47 +1,54 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-//Include files from folder PHPMailer
+
+// Include files from the PHPMailer folder
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
-//Announcement plugin
+
+// Create a new PHPMailer instance
 $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->setLanguage('en', 'phpmailer/language');
 $mail->IsHTML(true);
-//ouner settings
-//from whom mail
+
+// Sender settings
 $mail->setFrom('nataliia.voroshylova@gmail.com', 'Nataliia Zabazhanova');
-//for whom
-$mail->addAddress('savephoto779@gmail.com')
-//mail theme
-$mail->Subject = 'WOrk with front-end develper Nataliia';
-//mail body
+
+// Recipient
+$mail->addAddress('savephoto779@gmail.com');
+
+// Mail subject
+$mail->Subject = 'Work with front-end developer Nataliia';
+
+// Mail body
 $body = '<h1>Hello!</h1>';
-//Check up fields
-if(trim(!empty($_POST['name']))){
-    $body.='<p><strong>Name:</strong> '.$_POST['name'].'</p>';
+
+// Check form fields
+if (!empty(trim($_POST['name']))) {
+    $body .= '<p><strong>Name:</strong> ' . $_POST['name'] . '</p>';
 }
-if(trim(!empty($_POST['email']))){
-    $body.='<p><strong>Email:</strong> '.$_POST['email'].'</p>';
+if (!empty(trim($_POST['email']))) {
+    $body .= '<p><strong>Email:</strong> ' . $_POST['email'] . '</p>';
 }
-if(trim(!empty($_POST['message']))){
-    $body.='<p><strong>Message:</strong> '.$_POST['message'].'</p>';
+if (!empty(trim($_POST['message']))) {
+    $body .= '<p><strong>Message:</strong> ' . $_POST['message'] . '</p>';
 }
-//Include file
+
+// Include file
 if (!empty($_FILES['image']['tmp_name'])) {
-    $filePath = __DIR__."/files/". $_FILES['image']['name'];
+    $filePath = __DIR__ . "/files/" . $_FILES['image']['name'];
     if (copy($_FILES['image']['tmp_name'], $filePath)) {
         $fileAttach = $filePath;
-        $body.='<p><strong>Macket in appendix</strong>';
+        $body .= '<p><strong>Mockup in appendix</strong></p>';
         $mail->addAttachment($fileAttach);
     }
 }
 
-$mail->body = $body;
+$mail->Body = $body;
 
-//sending
-if (!$mail->send()){
+// Sending
+if (!$mail->send()) {
     $message = 'Error';
 } else {
     $message = 'Sending successful';
