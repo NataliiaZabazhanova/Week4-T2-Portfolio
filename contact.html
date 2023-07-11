@@ -66,12 +66,12 @@
                             <!--Field name-->
                             <div class="form__item">
                                 <label for="formName" class="form__lable">Name*:</label>
-                                <input id="formName" type="text" name="text" class="form__input">
+                                <input id="formName" type="text" name="text" class="form__input _req">
                             </div>
                             <!--Field email-->
                             <div class="form__item">
                                 <label for="formEmail" class="form__lable">Email*:</label>
-                                <input id="formEmail" type="text" name="email" class="form__input">
+                                <input id="formEmail" type="text" name="email" class="form__input _req _email">
                             </div>
                             <!--For message-->
                             <div class="form__item">
@@ -82,10 +82,10 @@
                              <div class="form__item">
                                 <div class="file">
                                     <div class="file__item">
-                                        <input id="formIMage" accept=".psd, .fig, .xd, .sketch, .png, .jpeg, .gvg, .jpg, .pdf" type="file" name="maket" class="file__input">
-                                        <div class="file__button">Add</div>
+                                        <input id="formImage" accept=".psd, .fig, .xd, .sketch, .png, .jpeg, .svg, .jpg, .pdf" type="file" name="maket" class="file__input">
+                                        <div class="file__button">Add maket</div>
                                     </div>
-                                    <div class="file__preview"></div>
+                                    <div id="formPreview" class="file__preview"></div>
                                 </div>
                             </div>
                             <!--Add a button-->
