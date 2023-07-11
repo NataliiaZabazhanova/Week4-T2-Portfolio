@@ -60,7 +60,39 @@
                 <div class="greeting__column column">
                     <h1 class="column__title">Contact me</h1> 
                 </div>
-                <div class="greeting__text paragraf"> Let's work together!</div>
+                <div class="greeting__text paragraf "> Let's work together!
+                    <div class="form">
+                        <form action="#" id="form" class="form__body">
+                            <!--Field name-->
+                            <div class="form__item">
+                                <label for="formName" class="form__lable">Name*:</label>
+                                <input id="formName" type="text" name="text" class="form__input">
+                            </div>
+                            <!--Field email-->
+                            <div class="form__item">
+                                <label for="formEmail" class="form__lable">Email*:</label>
+                                <input id="formEmail" type="text" name="email" class="form__input">
+                            </div>
+                            <!--For message-->
+                            <div class="form__item">
+                                <label for="formMessage" class="form__lable">Write your message:</label>
+                                <textarea id="formMessage" name="message" class="form__input"></textarea>
+                            </div>
+                             <!--Add a file-->
+                             <div class="form__item">
+                                <div class="file">
+                                    <div class="file__item">
+                                        <input id="formIMage" accept=".psd, .fig, .xd, .sketch, .png, .jpeg, .gvg, .jpg, .pdf" type="file" name="maket" class="file__input">
+                                        <div class="file__button">Add</div>
+                                    </div>
+                                    <div class="file__preview"></div>
+                                </div>
+                            </div>
+                            <!--Add a button-->
+                            <button class="form__button" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
                 <div class="greeting__contact contact">
                     <div class="contact__row">
                         <div class="contact__column">

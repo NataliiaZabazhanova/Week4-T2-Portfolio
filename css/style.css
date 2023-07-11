@@ -754,6 +754,8 @@ body {
 .contact {
 }
 .contact__row {
+    display: flex;
+    flex-direction: column;
 }
 .contact__column {
 }
@@ -779,3 +781,101 @@ body {
 .icons__row img:first-child {
     margin-left: 0px;
 }
+/*Form settings*/
+.form {
+    max-width: 550px;
+    margin-top: 40px;
+}
+/**Delete all lines around form fields*/
+.form * {
+    outline: none;
+    }
+/*----------------------------------*/
+.form__body {
+}
+.form__item {
+    margin: 0px 0px 30px 0px;
+}
+.form__lable {
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+.form__input {
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.5s ease 0s;
+}
+.form__input:focus {
+    box-shadow: 0 0 15px #E2E3E3;
+}
+textarea.form__input {
+    min-height: 100px;
+    resize: vertical;
+    padding: 20px;
+}
+.file {
+}
+.file__item {
+    position: relative;
+}
+/*work together with .file__button = button*/
+.file__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+.file__button {
+    display: inline-flex;
+    min-height: 40px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF9F29;
+    padding: 0px 20px;
+}
+/*--------------------------------------*/
+.file__preview {
+    display: inline-block;
+    max-width: 100px;
+    padding: 10px 0px 0px 0px;
+}
+.file__preview img {
+    max-width: 100%;
+}
+.form__button {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-height: 80px;
+   background-color:#FF9F29;
+   color: #393E46;
+    text-transform: uppercase;
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+}
+.form__button:hover {
+    top: -8px;
+    color: #fff;
+    transition: all 0.5s ease 0.2s;
+    box-shadow: 0 5px 0px 0 #393E46;
+    background-color: #ed701e;
+   
+} 
+.form__button:active {
+    top: -4px;
+    color: #fff;
+    transition: all 0.1s ease 0s;
+    box-shadow: 0 2px 0px 0 #393E46;
+}  
+
+
+
