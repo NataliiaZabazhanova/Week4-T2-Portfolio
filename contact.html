@@ -63,24 +63,28 @@
                 <div class="greeting__text paragraf "> <h2 class="greeting__title block__title">Let's work together!</h2>
                    <!--Form from NETLIFY-->
                 <div class="form">
-                   <form name="contact" method="POST" netlify>
+                   <form name="contact" method="POST" netlify class="form__body">
+                    <!--Field name-->
+                    <div class="form__item">
+                        <p>
+                            <label class="form__lable">Your Name: <input type="text" name="name" class="form__input" /></label>
+                        </p>
+                    </div>
+                    <!--Field email-->
+                    <div class="form__item">
+                        <p>
+                            <label class="form__lable">Your Email: <input type="email" name="email" class="form__input" /></label>
+                        </p>
+                    </div>
+                    <!--For message-->
+                    <div class="form__item">
+                        <p>
+                            <label class="form__lable">Message: <textarea name="message" class="form__input"></textarea></label>
+                        </p>
+                    </div>
                     <p>
-                      <label>Your Name: <input type="text" name="name" /></label>
-                    </p>
-                    <p>
-                      <label>Your Email: <input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                      <label>Your Role: <select name="role[]" multiple>
-                        <option value="leader">Leader</option>
-                        <option value="follower">Follower</option>
-                      </select></label>
-                    </p>
-                    <p>
-                      <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
-                      <button type="submit">Send</button>
+                    <!--Add a button-->
+                        <button class="form__button" type="submit">Send</button>
                     </p>
                   </form>
                 </div>
@@ -116,8 +120,9 @@
                             <!--<button class="form__button" type="submit">Send</button>
                         </form>
                     -->
-                    </div>
+                   
                 </div>
+                
                 <div class="greeting__contact contact">
                     <div class="contact__row">
                         <div class="contact__column">
