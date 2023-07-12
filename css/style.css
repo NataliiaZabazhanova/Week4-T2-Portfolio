@@ -795,7 +795,7 @@ body {
     position: relative;
 }
 /*Animation for sending proces*/
-.form__body::after {
+/*.form__body::after {
    content: '';
     position: absolute;
     top: 0;
@@ -810,7 +810,7 @@ body {
 .form__body._sending::after {
     opacity: 1;
     visibility: visible;
-}
+}*/
 /********************************************/
 .form__item {
     margin: 0px 0px 30px 0px;

@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }else {
             alert("Error");
             form.classList.remove('_sending');
-
         }
 
         } else {
