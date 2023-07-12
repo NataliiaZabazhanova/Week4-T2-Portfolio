@@ -792,7 +792,7 @@ body {
     }
 /*----------------------------------*/
 .form__body {
-    position: relative;
+    
 }
 /*Animation for sending proces*/
 /*.form__body::after {
@@ -829,20 +829,14 @@ body {
 .form__input:focus {
     box-shadow: 0 0 15px #393E46;
 }
-/*Check up for errors*/
-.form__input._error {
-    box-shadow: 0 0 15px red;
-}
-/*----------------------------------------*/
 textarea.form__input {
     min-height: 100px;
     resize: vertical;
     padding: 20px;
 }
-.file {
-}
 .file__item {
     position: relative;
+    margin: 30px 0px 30px 0px;
 }
 /*work together with .file__button = button*/
 .file__input {
@@ -861,18 +855,10 @@ textarea.form__input {
     border-radius: 30px;
     justify-content: center;
     align-items: center;
-    background-color: #FF9F29;
+    background-color: #E2E3E3;
     padding: 0px 20px;
 }
 /*--------------------------------------*/
-.file__preview {
-    display: inline-block;
-    max-width: 100px;
-    padding: 10px 0px 0px 0px;
-}
-.file__preview img {
-    max-width: 100%;
-}
 .form__button {
    width: 100%;
    display: flex;
