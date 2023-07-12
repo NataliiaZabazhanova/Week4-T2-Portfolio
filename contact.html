@@ -63,7 +63,7 @@
                 <div class="greeting__text paragraf "> <h2 class="greeting__title block__title">Let's work together!</h2>
                    <!--Form from NETLIFY-->
                 <div class="form">
-                   <form name="contact" method="POST" netlify class="form__body">
+                   <form name="contact" method="POST" netlify class="form__body" enctype="multipart/form-data">
                     <!--Field name-->
                     <div class="form__item">
                         <p>
@@ -81,6 +81,18 @@
                         <p>
                             <label class="form__lable">Message: <textarea name="message" class="form__input"></textarea></label>
                         </p>
+                    <!--Add a file-->
+                    </div>
+                    <div class="form__item">
+                        <div class="file__item">
+                        <p>
+                            <label>
+                                <input name="file" accept=".psd, .fig, .xd, .sketch, .png, .jpeg, .svg, .jpg" type="file" class="file__input">
+                                <div class="file__button">Add maket</div>
+                            
+                            </label>
+                        </p>
+                        </div>
                     </div>
                     <p>
                     <!--Add a button-->
