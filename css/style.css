@@ -577,6 +577,7 @@ body {
 /**********************************************/
 /***********************************************/
 /*PAGE ABOUT*/
+/*Greeting*/
 /*Education*/
 .education__title {
     
@@ -686,7 +687,11 @@ body {
 }
 /*******************************************/
 /*Portfolio*/
-
+@media (max-width: 1100px) {
+    .portfolio__column {
+        margin: 30px 0px 0px 0px;
+    }
+}
 /**********************************************/
 /***********************************************/
 /*PAGE PROJECTS*/
@@ -708,6 +713,7 @@ body {
     align-items: center;
     min-height: 380px;
     opacity: 0.5;
+    border-radius: 30%;
 }
 @media (max-width: 440px) {
     .tabs__items {
@@ -749,7 +755,10 @@ body {
 /**********************************************/
 /***********************************************/
 /*PAGE CONTACTS*/
-.greeting__contact {
+@media (max-width: 768px) {
+    .greeting__contact {
+        margin: 30px 0px 0px 0px;
+    }
 }
 .contact {
 }
@@ -774,7 +783,7 @@ body {
 }
 .icons__row {
     display: flex;
-    justify-content: center;
+   
     align-items: center;
 }
 .icons__row img {
