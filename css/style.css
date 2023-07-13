@@ -912,4 +912,7 @@ textarea.form__input {
     margin: 20px 0px 0px 0px;
     font-size: 12px;
 }
+.footer__text a {
+    text-decoration: underline;
+}
 
