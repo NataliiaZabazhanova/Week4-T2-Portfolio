@@ -748,6 +748,9 @@ body {
 .tabs__list li span {
     font-weight: 500;
 }
+.tabs__text span a{
+    color: #393E46;
+}
 .tabs__btn {
     margin: 50px 0px 0px 0px;
     background-color: #FF9F29;
