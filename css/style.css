@@ -715,6 +715,9 @@ body {
     opacity: 0.5;
     border-radius: 30%;
 }
+/*.tabs__item img:hover {
+    transform: scale(1.1);
+}*/
 @media (max-width: 440px) {
     .tabs__items {
         flex-direction: column;
