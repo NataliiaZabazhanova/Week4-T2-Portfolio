@@ -502,7 +502,7 @@ body {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #F5F5F5;
+    border-top: 15px solid #F5F5F5;
 }
 .block {
     text-align: center;
